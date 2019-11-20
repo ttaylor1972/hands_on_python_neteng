@@ -1,0 +1,26 @@
+[
+    {
+        "age": 0.0,
+        "interface": "GigabitEthernet3/3",
+        "ip": "10.99.99.1",
+        "mac": "0C:7B:68:6B:27:0F"
+    },
+    {
+        "age": 0.0,
+        "interface": "Vlan1",
+        "ip": "172.16.32.1",
+        "mac": "0C:7B:68:6B:80:01"
+    },
+    {
+        "age": 1.0,
+        "interface": "GigabitEthernet0/0",
+        "ip": "192.168.122.1",
+        "mac": "52:54:00:30:B3:E9"
+    },
+    {
+        "age": 0.0,
+        "interface": "GigabitEthernet0/0",
+        "ip": "192.168.122.212",
+        "mac": "0C:7B:68:6B:27:00"
+    }
+]
