@@ -1,10 +1,18 @@
 import requests
 import json
+import sys
+import argparse
+
 from netbox_helpers import print_error_msg
 
-debug = True
 
-mac_address = "08:74:02:00:00:00"
+debug = True
+parser = argparse.ArgumentParser(description='MAC Address OUI Lookup')
+parser.add_argument('mac_address', help='MAC Address to be queried')
+args = parser.parse_args()
+
+mac_address = args.mac_address
+
 base_url = "http://macvendors.co/api/"
 url = base_url + mac_address + "/json"
 
