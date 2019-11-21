@@ -11,7 +11,6 @@ prefix_path = "ipam/prefixes/"
 url = base_url + prefix_path
 netbox_api_token = "0123456789abcdef0123456789abcdef01234567"
 
-
 _headers = {
     "Authorization": "Token {}".format(netbox_api_token),
     "Accept": "application/json",
