@@ -1,0 +1,27 @@
+[routers]
+local_sw_1 ansible_host=192.168.122.178
+local_sw_2 ansible_host=192.168.122.177
+local_sw_3 ansible_host=192.168.122.2
+local_sw_4 ansible_host=192.168.122.33
+##router2 ansible_host=192.168.122.11 ansible_become_pass=python
+##router3 ansible_host=192.168.122.12
+##router4 ansible_host=192.168.122.13
+##router5 ansible_host=192.168.122.14
+
+
+
+[routers:vars]
+ansible_network_os=ios
+ansible_user=ivoxy
+ansible_ssh_pass=ivoxy123
+ansible_become=no
+ansible_become_method=enable
+ansible_become_pass=cisco
+
+[all:vars]
+ansible_port=22
+
+
+
+[servers]
+1.1.1.1
