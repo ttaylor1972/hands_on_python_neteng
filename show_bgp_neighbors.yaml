@@ -20,5 +20,5 @@
 # https://docs.ansible.com/ansible/2.5/modules/raw_module.html
 
 # Command to run:
-# ansible-playbook -i ./hosts ./show_bgp_neighbors.yaml -u u1 -k
-# both hosts and yaml file are in the current working directory
+# ansible-playbook -i ./ansible_sample_hosts_file ./show_bgp_neighbors.yaml -u u1 -k
+# both ansible_sample_hosts_file and yaml file are in the current working directory

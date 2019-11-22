@@ -28,5 +28,5 @@
 # Old method prior to ansible 2.5 using connection: local instead of connection: network_cli.
 
 # Command to run:
-# ansible-playbook -i ./hosts ./ios_command_local_with_vars_and_provider.yaml
-# both hosts and yaml files are in the current working directory
+# ansible-playbook -i ./ansible_sample_hosts_file ./ios_command_local_with_vars_and_provider.yaml
+# both ansible_sample_hosts_file and yaml files are in the current working directory

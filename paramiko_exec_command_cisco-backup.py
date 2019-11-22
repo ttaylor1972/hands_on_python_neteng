@@ -14,7 +14,7 @@ list = list[4:-1]
 config = '\n'.join(list)
 #print(config)
 
-with open('Router1-running-config.txt', 'w') as f:
+with open('Router1-running-sample_ios_sh_run_output.txt', 'w') as f:
     f.write(config)
 
 myparamiko.close(ssh_client)

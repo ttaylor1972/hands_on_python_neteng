@@ -15,7 +15,7 @@ output = ios.get_arp_table()
 dump = json.dumps(output, sort_keys=True, indent=4)
 #print(dump)
 
-with open('arp.txt', 'w') as f:
+with open('test_data_arp_output.txt', 'w') as f:
     f.write(dump)
 
 #end your code

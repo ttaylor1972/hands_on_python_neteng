@@ -6,7 +6,7 @@ optional_args = {'secret': 'cisco'} #cisco is the enable password
 ios = driver('10.1.1.10', 'admin', 'cisco', optional_args=optional_args)
 ios.open()
 
-ios.load_replace_candidate(filename='config.txt')
+ios.load_replace_candidate(filename='sample_ios_sh_run_output.txt')
 
 
 diff = ios.compare_config()

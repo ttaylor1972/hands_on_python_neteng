@@ -6,7 +6,7 @@ optional_args = {'secret': 'cisco'} #cisco is the enable password
 ios = driver('10.10.10.1', 'admin', 'cisco', optional_args=optional_args)
 ios.open()
 
-ios.load_merge_candidate('acl.txt')
+ios.load_merge_candidate('test_data_acl.txt')
 
 
 diff = ios.compare_config()
