@@ -10,7 +10,7 @@ import getpass
 import sys
 
 # set the Cisco device address
-deviceAddr = "192.168.122.33"
+deviceAddr = "172.16.32.33"
 # the user will be prompted to enter their username & password
 switchUser = input("Enter your telnet username: ")
 switchPass = getpass.getpass()

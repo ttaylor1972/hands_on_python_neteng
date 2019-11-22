@@ -1,11 +1,16 @@
+# Here are some example Ansible commands that you may find useful
+#
+##################################################################
+
+
 # Description:
 # Executes who command using the default command module on a Ubuntu server
-ansible 192.168.0.121 -i ./hosts  -m command -a "who" -u ivoxy -k
+ansible 172.16.32.121 -i ./hosts  -m command -a "who" -u ivoxy -k
 
 
 # Description:
 # Executes "df -h" command and redirects the output to a file using the shell module on a Ubuntu server
-ansible 192.168.0.121 -i ./hosts  -m shell -a "df -h > space.txt" -u ivoxy -k
+ansible 172.16.32.121 -i ./hosts  -m shell -a "df -h > space.txt" -u ivoxy -k
 
 
 # Description:
@@ -29,9 +34,9 @@ ansible -i ./hosts servers -m setup -u ivoxy -k
 
 # Description:
 # Creates a file on the Linux node and sets mode to 400 (r--------)
-$ansible -i ./hosts 192.168.0.121 -m file -a "path=/home/ivoxy/new.txt state=touch mode=400" -u ivoxy -k
+$ansible -i ./hosts 172.16.32.121 -m file -a "path=/home/ivoxy/new.txt state=touch mode=400" -u ivoxy -k
 SSH password:
-192.168.0.121 | CHANGED => {
+172.16.32.121 | CHANGED => {
     "changed": true,
     "dest": "/home/ivoxy/new.txt",
     "gid": 1003,
@@ -47,9 +52,9 @@ SSH password:
 
 # Description:
 # Deletes the file on the Linux node (if exists)
-ansible -i ./hosts 192.168.0.121 -m file -a "path=/home/ivoxy/new.txt state=absent" -u ivoxy -k
+ansible -i ./hosts 172.16.32.121 -m file -a "path=/home/ivoxy/new.txt state=absent" -u ivoxy -k
 SSH password:
-192.168.0.121 | SUCCESS => {
+172.16.32.121 | SUCCESS => {
     "changed": false,
     "path": "/home/ivoxy/new.txt",
     "state": "absent"
@@ -58,9 +63,9 @@ SSH password:
 
 # Description:
 # Creates a directory on the Linux node and sets mode to 755 (rwxr-xr-x)
-ansible -i ./hosts 192.168.0.121 -m file -a "path=/home/ivoxy/my-new-dir state=directory mode=755" -u ivoxy -k
+ansible -i ./hosts 172.16.32.121 -m file -a "path=/home/ivoxy/my-new-dir state=directory mode=755" -u ivoxy -k
 SSH password:
-192.168.0.121 | CHANGED => {
+172.16.32.121 | CHANGED => {
     "changed": true,
     "gid": 1003,
     "group": "ivoxy",
@@ -77,9 +82,9 @@ SSH password:
 
 # Description:
 # Copies a file on the remote node (both source and destination are on the remote node. See the remote_src=yes option)
-ansible 192.168.0.121 -m copy -a "src=/home/ivoxy/new.txt dest=/home/ivoxy/my-new-dir/file1.txt remote_src=yes" -u ivoxy -k
+ansible 172.16.32.121 -m copy -a "src=/home/ivoxy/new.txt dest=/home/ivoxy/my-new-dir/file1.txt remote_src=yes" -u ivoxy -k
 SSH password:
-192.168.0.121 | CHANGED => {
+172.16.32.121 | CHANGED => {
     "changed": true,
     "checksum": "e0d752d317281ad5fcb8c71bcc9c7b1590a80a35",
     "dest": "/home/ivoxy/my-new-dir/file1.txt",
@@ -97,9 +102,9 @@ SSH password:
 
 # Description:
 # Copies a file from the Ansible controlling machine to the remote node
-ansible 192.168.0.121 -m copy -a "src=/home/ivoxy/lab/ansible/router1.txt dest=/home/ivoxy/my-new-dir/file1.txt" -u ivoxy -k
+ansible 172.16.32.121 -m copy -a "src=/home/ivoxy/lab/ansible/router1.txt dest=/home/ivoxy/my-new-dir/file1.txt" -u ivoxy -k
 SSH password:
-192.168.0.121 | CHANGED => {
+172.16.32.121 | CHANGED => {
     "changed": true,
     "checksum": "2e677f9a9f8b63cd0d18c24ec6cbbe55632081b7",
     "dest": "/home/ivoxy/my-new-dir/file1.txt",
@@ -118,10 +123,10 @@ SSH password:
 
 # Description:
 # Installs a package named nginx (if it doesn't already exist)
-ansible 192.168.0.121 -i ./hosts -m apt -a "name=nginx state=present update_cache=true" -u ivoxy -k --become -K
+ansible 172.16.32.121 -i ./hosts -m apt -a "name=nginx state=present update_cache=true" -u ivoxy -k --become -K
 SSH password:
 SUDO password[defaults to SSH password]:
-192.168.0.121 | SUCCESS => {
+172.16.32.121 | SUCCESS => {
     "cache_update_time": 1543837550,
     "cache_updated": true,
     "changed": false
@@ -131,10 +136,10 @@ SUDO password[defaults to SSH password]:
 
 # Description:
 # Starts a service named nginx if not already started
-ansible 192.168.0.121 -i ./hosts -m service -a "name=nginx state=started" -u ivoxy -k --become -K
+ansible 172.16.32.121 -i ./hosts -m service -a "name=nginx state=started" -u ivoxy -k --become -K
 SSH password:
 SUDO password[defaults to SSH password]:
-192.168.0.121 | SUCCESS => {
+172.16.32.121 | SUCCESS => {
     "changed": false,
     "name": "nginx",
     "state": "started",

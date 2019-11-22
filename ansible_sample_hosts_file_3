@@ -1,9 +1,9 @@
 [routers]
 router1
-router2 ansible_host=192.168.122.11 ansible_become_pass=python
-router3 ansible_host=192.168.122.12
-router4 ansible_host=192.168.122.13
-router5 ansible_host=192.168.122.14
+router2 ansible_host=172.16.32.11 ansible_become_pass=python
+router3 ansible_host=172.16.32.12
+router4 ansible_host=172.16.32.13
+router5 ansible_host=172.16.32.14
 
 
 
