@@ -24,5 +24,5 @@
 # http://docs.ansible.com/ansible/latest/ios_command_module.html
 
 # Command to run:
-# ansible-playbook -i ./ansible_sample_hosts_file ./ios_command_save_to_file.yaml -u u1 -k
+# ansible-playbook -i ./ansible_sample_hosts_file ./ansible_playbook - ios_command_save_to_file.yaml -u u1 -k
 # both ansible_sample_hosts_file and yaml file are in the current working directory

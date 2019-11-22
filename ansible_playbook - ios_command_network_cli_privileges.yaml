@@ -31,4 +31,4 @@
 # http://docs.ansible.com/ansible/latest/ios_command_module.html
 
 # Command to run:
-# ansible-playbook -i ./ansible_sample_hosts_file ./ios_command_network_cli_privileges.yaml
+# ansible-playbook -i ./ansible_sample_hosts_file ./ansible_playbook - ios_command_network_cli_privileges.yaml

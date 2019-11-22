@@ -3,7 +3,7 @@ from netmiko import file_transfer
 
 cisco_device = {
         'device_type': 'cisco_ios',
-        'ip': '10.1.1.10',
+        'ip': '172.16.32.10',
         'username': 'admin',
         'password': 'cisco',
         'port': 22,

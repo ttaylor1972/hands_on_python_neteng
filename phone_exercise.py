@@ -36,7 +36,7 @@ phone_inventory[-1]['speed_dial'].sort()
 print("\n\n#### Sort the last phone profile")
 pprint.pprint(phone_inventory[-1])
 
-# Add an additional profile to the inventory
+# Add an additional profile to the ansible_sample_inventory_file
 phone_inventory.append(
     {
         "user": "Justin",

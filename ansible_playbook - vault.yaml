@@ -22,5 +22,5 @@
       debug: var=output
 ...
 # Command to run:
-# ansible-playbook -i ./inventory_vault ansible_vault.yaml --ask-vault-pass -e@./vault.yaml
-# inventory_vault, ansible_vault.yaml and vault.yaml are in the same directory
+# ansible-playbook -i ./inventory_vault ansible_playbook - vault.yaml --ask-vault-pass -e@./vault.yaml
+# inventory_vault, ansible_playbook - vault.yaml and vault.yaml are in the same directory

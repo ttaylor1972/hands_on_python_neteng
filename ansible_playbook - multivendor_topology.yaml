@@ -108,4 +108,4 @@
 
 
 # Command to run:
-# ansible-playbook -i ./inventory_multivendor multivendor_topology.yaml
+# ansible-playbook -i ./ansible_sample_inventory_multivendor ansible_playbook - multivendor_topology.yaml

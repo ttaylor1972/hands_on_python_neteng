@@ -18,4 +18,4 @@
       debug: var=output
 ...
 # Command to run:
-# ansible-playbook -i ./inventory ios_basic_config.yaml
+# ansible-playbook -i ./ansible_sample_inventory_file ansible_playbook - ios_basic_config.yaml

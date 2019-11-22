@@ -10,4 +10,4 @@
         backup: yes
 ...
 # Command to run:
-# ansible-playbook -i ./inventory ios_config_backup.yaml
+# ansible-playbook -i ./ansible_sample_inventory_file ansible_playbook - ios_config_backup.yaml

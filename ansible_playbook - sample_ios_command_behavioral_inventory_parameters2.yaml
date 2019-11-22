@@ -29,6 +29,6 @@
 # http://docs.ansible.com/ansible/latest/ios_command_module.html
 
 # Command to run:
-# ansible-playbook -i ./ansible_sample_hosts_file_3 ./ios_command_behavioral_inventory_parameters2.yaml
+# ansible-playbook -i ./ansible_sample_hosts_file_3 ./ansible_playbook - sample_ios_command_behavioral_inventory_parameters2.yaml
 
 

@@ -18,4 +18,4 @@
 ...
 
 # Command to run:
-# ansible-playbook -i ./inventory_linux ./linux_loops2.yaml
+# ansible-playbook -i ./ansible_sample_inventory_linux ./ansible_playbook - linux_loops2.yaml
